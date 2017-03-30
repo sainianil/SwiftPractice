@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0434923B1E8BA84F0054D8FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434923A1E8BA84F0054D8FE /* MapViewController.swift */; };
 		043D8A511E795FF70063553B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A501E795FF70063553B /* AppDelegate.swift */; };
 		043D8A531E795FF70063553B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A521E795FF70063553B /* ViewController.swift */; };
 		043D8A561E795FF70063553B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D8A541E795FF70063553B /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0434923A1E8BA84F0054D8FE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		043D8A4D1E795FF70063553B /* TimeTrackerSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTrackerSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043D8A501E795FF70063553B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043D8A521E795FF70063553B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				043D8A5C1E795FF70063553B /* Info.plist */,
 				043D8A831E7967FD0063553B /* MainViewController.swift */,
 				043D8A851E7968E10063553B /* SidebarTableViewController.swift */,
+				0434923A1E8BA84F0054D8FE /* MapViewController.swift */,
 			);
 			path = TimeTrackerSystem;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043D8A531E795FF70063553B /* ViewController.swift in Sources */,
+				0434923B1E8BA84F0054D8FE /* MapViewController.swift in Sources */,
 				043D8A511E795FF70063553B /* AppDelegate.swift in Sources */,
 				043D8A821E7961EF0063553B /* SWRevealViewController.m in Sources */,
 				043D8A841E7967FD0063553B /* MainViewController.swift in Sources */,
@@ -513,6 +517,7 @@
 				043D8A771E795FF70063553B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		043D8A781E795FF70063553B /* Build configuration list for PBXNativeTarget "TimeTrackerSystemTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +526,7 @@
 				043D8A7A1E795FF70063553B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		043D8A7B1E795FF70063553B /* Build configuration list for PBXNativeTarget "TimeTrackerSystemUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +535,7 @@
 				043D8A7D1E795FF70063553B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
