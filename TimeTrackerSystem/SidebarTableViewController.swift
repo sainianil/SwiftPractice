@@ -99,7 +99,5 @@ class SidebarTableViewController: UITableViewController {
         let indexPath = self.tableView.indexPathForSelectedRow
         let destViewController = segue.destinationViewController as! UINavigationController
         destViewController.title = menuItems[(indexPath?.row)!].uppercaseString
-        
     }
-    
 }

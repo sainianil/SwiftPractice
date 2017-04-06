@@ -18,6 +18,8 @@
 		043D8A821E7961EF0063553B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A811E7961EF0063553B /* SWRevealViewController.m */; };
 		043D8A841E7967FD0063553B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A831E7967FD0063553B /* MainViewController.swift */; };
 		043D8A861E7968E10063553B /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A851E7968E10063553B /* SidebarTableViewController.swift */; };
+		0467328B1E967ACA00DEFBEA /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467328A1E967ACA00DEFBEA /* ReportViewController.swift */; };
+		0467328D1E967B5700DEFBEA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467328C1E967B5700DEFBEA /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		043D8A811E7961EF0063553B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		043D8A831E7967FD0063553B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		043D8A851E7968E10063553B /* SidebarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarTableViewController.swift; sourceTree = "<group>"; };
+		0467328A1E967ACA00DEFBEA /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		0467328C1E967B5700DEFBEA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 				043D8A831E7967FD0063553B /* MainViewController.swift */,
 				043D8A851E7968E10063553B /* SidebarTableViewController.swift */,
 				0434923A1E8BA84F0054D8FE /* MapViewController.swift */,
+				0467328A1E967ACA00DEFBEA /* ReportViewController.swift */,
+				0467328C1E967B5700DEFBEA /* SettingsViewController.swift */,
 			);
 			path = TimeTrackerSystem;
 			sourceTree = "<group>";
@@ -283,9 +289,11 @@
 				043D8A531E795FF70063553B /* ViewController.swift in Sources */,
 				0434923B1E8BA84F0054D8FE /* MapViewController.swift in Sources */,
 				043D8A511E795FF70063553B /* AppDelegate.swift in Sources */,
+				0467328D1E967B5700DEFBEA /* SettingsViewController.swift in Sources */,
 				043D8A821E7961EF0063553B /* SWRevealViewController.m in Sources */,
 				043D8A841E7967FD0063553B /* MainViewController.swift in Sources */,
 				043D8A861E7968E10063553B /* SidebarTableViewController.swift in Sources */,
+				0467328B1E967ACA00DEFBEA /* ReportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
