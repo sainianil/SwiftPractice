@@ -20,6 +20,7 @@
 		043D8A861E7968E10063553B /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A851E7968E10063553B /* SidebarTableViewController.swift */; };
 		0467328B1E967ACA00DEFBEA /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467328A1E967ACA00DEFBEA /* ReportViewController.swift */; };
 		0467328D1E967B5700DEFBEA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467328C1E967B5700DEFBEA /* SettingsViewController.swift */; };
+		47DF8C921E96C19100FCEEE3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DF8C911E96C19100FCEEE3 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		043D8A851E7968E10063553B /* SidebarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarTableViewController.swift; sourceTree = "<group>"; };
 		0467328A1E967ACA00DEFBEA /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		0467328C1E967B5700DEFBEA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		47DF8C911E96C19100FCEEE3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47DF8C921E96C19100FCEEE3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +94,7 @@
 		043D8A441E795FF70063553B = {
 			isa = PBXGroup;
 			children = (
+				47DF8C911E96C19100FCEEE3 /* MapKit.framework */,
 				043D8A4F1E795FF70063553B /* TimeTrackerSystem */,
 				043D8A641E795FF70063553B /* TimeTrackerSystemTests */,
 				043D8A6F1E795FF70063553B /* TimeTrackerSystemUITests */,
