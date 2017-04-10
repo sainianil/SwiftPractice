@@ -16,7 +16,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.title = "Map"
+        self.title = "Time Tracker - Map"
         if let revealVC:SWRevealViewController = self.revealViewController() {
             self.sidebarButton.target = revealVC
             self.sidebarButton.action = "revealToggle:"

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0434923B1E8BA84F0054D8FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434923A1E8BA84F0054D8FE /* MapViewController.swift */; };
+		0438B0201E9A032D004F2E9C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438B01F1E9A032D004F2E9C /* MapKit.framework */; };
+		0438B0321E9A7572004F2E9C /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438B0311E9A7572004F2E9C /* TimerView.swift */; };
 		043D8A511E795FF70063553B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A501E795FF70063553B /* AppDelegate.swift */; };
 		043D8A531E795FF70063553B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A521E795FF70063553B /* ViewController.swift */; };
 		043D8A561E795FF70063553B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D8A541E795FF70063553B /* Main.storyboard */; };
@@ -19,7 +21,7 @@
 		043D8A841E7967FD0063553B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A831E7967FD0063553B /* MainViewController.swift */; };
 		043D8A861E7968E10063553B /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A851E7968E10063553B /* SidebarTableViewController.swift */; };
 		0467328B1E967ACA00DEFBEA /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467328A1E967ACA00DEFBEA /* ReportViewController.swift */; };
-		0467328D1E967B5700DEFBEA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467328C1E967B5700DEFBEA /* SettingsViewController.swift */; };
+		0467328D1E967B5700DEFBEA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467328C1E967B5700DEFBEA /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		0434923A1E8BA84F0054D8FE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0438B01F1E9A032D004F2E9C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0438B0311E9A7572004F2E9C /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		043D8A4D1E795FF70063553B /* TimeTrackerSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTrackerSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043D8A501E795FF70063553B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043D8A521E795FF70063553B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +64,7 @@
 		043D8A831E7967FD0063553B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		043D8A851E7968E10063553B /* SidebarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarTableViewController.swift; sourceTree = "<group>"; };
 		0467328A1E967ACA00DEFBEA /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
-		0467328C1E967B5700DEFBEA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0467328C1E967B5700DEFBEA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0438B0201E9A032D004F2E9C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +96,7 @@
 		043D8A441E795FF70063553B = {
 			isa = PBXGroup;
 			children = (
+				0438B01F1E9A032D004F2E9C /* MapKit.framework */,
 				043D8A4F1E795FF70063553B /* TimeTrackerSystem */,
 				043D8A641E795FF70063553B /* TimeTrackerSystemTests */,
 				043D8A6F1E795FF70063553B /* TimeTrackerSystemUITests */,
@@ -122,7 +128,8 @@
 				043D8A851E7968E10063553B /* SidebarTableViewController.swift */,
 				0434923A1E8BA84F0054D8FE /* MapViewController.swift */,
 				0467328A1E967ACA00DEFBEA /* ReportViewController.swift */,
-				0467328C1E967B5700DEFBEA /* SettingsViewController.swift */,
+				0467328C1E967B5700DEFBEA /* SettingsTableViewController.swift */,
+				0438B0311E9A7572004F2E9C /* TimerView.swift */,
 			);
 			path = TimeTrackerSystem;
 			sourceTree = "<group>";
@@ -286,10 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0438B0321E9A7572004F2E9C /* TimerView.swift in Sources */,
 				043D8A531E795FF70063553B /* ViewController.swift in Sources */,
 				0434923B1E8BA84F0054D8FE /* MapViewController.swift in Sources */,
 				043D8A511E795FF70063553B /* AppDelegate.swift in Sources */,
-				0467328D1E967B5700DEFBEA /* SettingsViewController.swift in Sources */,
+				0467328D1E967B5700DEFBEA /* SettingsTableViewController.swift in Sources */,
 				043D8A821E7961EF0063553B /* SWRevealViewController.m in Sources */,
 				043D8A841E7967FD0063553B /* MainViewController.swift in Sources */,
 				043D8A861E7968E10063553B /* SidebarTableViewController.swift in Sources */,
