@@ -11,7 +11,6 @@
 		0438B0201E9A032D004F2E9C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438B01F1E9A032D004F2E9C /* MapKit.framework */; };
 		0438B0321E9A7572004F2E9C /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438B0311E9A7572004F2E9C /* TimerView.swift */; };
 		043D8A511E795FF70063553B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A501E795FF70063553B /* AppDelegate.swift */; };
-		043D8A531E795FF70063553B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D8A521E795FF70063553B /* ViewController.swift */; };
 		043D8A561E795FF70063553B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D8A541E795FF70063553B /* Main.storyboard */; };
 		043D8A581E795FF70063553B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043D8A571E795FF70063553B /* Assets.xcassets */; };
 		043D8A5B1E795FF70063553B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D8A591E795FF70063553B /* LaunchScreen.storyboard */; };
@@ -45,9 +44,8 @@
 		0434923A1E8BA84F0054D8FE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0438B01F1E9A032D004F2E9C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0438B0311E9A7572004F2E9C /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		043D8A4D1E795FF70063553B /* TimeTrackerSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTrackerSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043D8A4D1E795FF70063553B /* Time Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		043D8A501E795FF70063553B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		043D8A521E795FF70063553B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		043D8A551E795FF70063553B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		043D8A571E795FF70063553B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043D8A5A1E795FF70063553B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,7 +105,7 @@
 		043D8A4E1E795FF70063553B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				043D8A4D1E795FF70063553B /* TimeTrackerSystem.app */,
+				043D8A4D1E795FF70063553B /* Time Tracker.app */,
 				043D8A611E795FF70063553B /* TimeTrackerSystemTests.xctest */,
 				043D8A6C1E795FF70063553B /* TimeTrackerSystemUITests.xctest */,
 			);
@@ -119,7 +117,6 @@
 			children = (
 				043D8A7E1E7961C50063553B /* SWRevealViewController */,
 				043D8A501E795FF70063553B /* AppDelegate.swift */,
-				043D8A521E795FF70063553B /* ViewController.swift */,
 				043D8A541E795FF70063553B /* Main.storyboard */,
 				043D8A571E795FF70063553B /* Assets.xcassets */,
 				043D8A591E795FF70063553B /* LaunchScreen.storyboard */,
@@ -165,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		043D8A4C1E795FF70063553B /* TimeTrackerSystem */ = {
+		043D8A4C1E795FF70063553B /* Time Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 043D8A751E795FF70063553B /* Build configuration list for PBXNativeTarget "TimeTrackerSystem" */;
+			buildConfigurationList = 043D8A751E795FF70063553B /* Build configuration list for PBXNativeTarget "Time Tracker" */;
 			buildPhases = (
 				043D8A491E795FF70063553B /* Sources */,
 				043D8A4A1E795FF70063553B /* Frameworks */,
@@ -177,9 +174,9 @@
 			);
 			dependencies = (
 			);
-			name = TimeTrackerSystem;
+			name = "Time Tracker";
 			productName = TimeTrackerSystem;
-			productReference = 043D8A4D1E795FF70063553B /* TimeTrackerSystem.app */;
+			productReference = 043D8A4D1E795FF70063553B /* Time Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		043D8A601E795FF70063553B /* TimeTrackerSystemTests */ = {
@@ -230,6 +227,7 @@
 				TargetAttributes = {
 					043D8A4C1E795FF70063553B = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7YBP7NFD78;
 					};
 					043D8A601E795FF70063553B = {
 						CreatedOnToolsVersion = 7.2;
@@ -254,7 +252,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				043D8A4C1E795FF70063553B /* TimeTrackerSystem */,
+				043D8A4C1E795FF70063553B /* Time Tracker */,
 				043D8A601E795FF70063553B /* TimeTrackerSystemTests */,
 				043D8A6B1E795FF70063553B /* TimeTrackerSystemUITests */,
 			);
@@ -294,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0438B0321E9A7572004F2E9C /* TimerView.swift in Sources */,
-				043D8A531E795FF70063553B /* ViewController.swift in Sources */,
 				0434923B1E8BA84F0054D8FE /* MapViewController.swift in Sources */,
 				043D8A511E795FF70063553B /* AppDelegate.swift in Sources */,
 				0467328D1E967B5700DEFBEA /* SettingsTableViewController.swift in Sources */,
@@ -326,12 +323,12 @@
 /* Begin PBXTargetDependency section */
 		043D8A631E795FF70063553B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 043D8A4C1E795FF70063553B /* TimeTrackerSystem */;
+			target = 043D8A4C1E795FF70063553B /* Time Tracker */;
 			targetProxy = 043D8A621E795FF70063553B /* PBXContainerItemProxy */;
 		};
 		043D8A6E1E795FF70063553B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 043D8A4C1E795FF70063553B /* TimeTrackerSystem */;
+			target = 043D8A4C1E795FF70063553B /* Time Tracker */;
 			targetProxy = 043D8A6D1E795FF70063553B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -444,10 +441,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TimeTrackerSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.saini.com.TimeTrackerSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saini.TimeTrackerSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TimeTrackerSystem/TimeTrackerSystem-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -458,10 +458,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TimeTrackerSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.saini.com.TimeTrackerSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saini.TimeTrackerSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TimeTrackerSystem/TimeTrackerSystem-Bridging-Header.h";
 			};
 			name = Release;
@@ -526,7 +529,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		043D8A751E795FF70063553B /* Build configuration list for PBXNativeTarget "TimeTrackerSystem" */ = {
+		043D8A751E795FF70063553B /* Build configuration list for PBXNativeTarget "Time Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				043D8A761E795FF70063553B /* Debug */,
