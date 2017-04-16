@@ -91,6 +91,7 @@ import UIKit
     func internalInit() {
         let displayLink = CADisplayLink(target: self, selector: "displayLinkTick")
         displayLink.addToRunLoop(NSRunLoop.mainRunLoop(), forMode: NSRunLoopCommonModes)
+        displayLink.frameInterval = 60
         displayLink.paused = true
         self.displayLink = displayLink
     }
@@ -184,7 +185,7 @@ import UIKit
     /*internal*/ func displayLinkTick() {
 
         let renderTime = refreshRate.isZero ? self.displayLink!.duration : refreshRate
-
+        //print(" == \(progress)")
         if destinationProgress > progress {
             progress += renderTime
             if progress >= destinationProgress {

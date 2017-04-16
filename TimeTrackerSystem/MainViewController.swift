@@ -25,9 +25,6 @@ class MainViewController: UIViewController {
             self.view.addGestureRecognizer(revealVC.panGestureRecognizer())
 
             self.showProgress()
-
-//            timer.invalidate()
-//            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "showProgress", userInfo: nil, repeats: true)
         }
     }
 
@@ -39,19 +36,11 @@ class MainViewController: UIViewController {
     func showProgress()
     {
         let progressView = timerView as! CircleProgressView
-        progressView.refreshRate = 0.0001
-        progressView.destinationProgress = 10.0
+        progressView.destinationProgress = 9*3600.0
+        progressView.refreshRate = 1/3600.0
         progressView.displayLink?.paused = false
-//        print(" == \(progressView.progress)")
-//        if progressView.progress >= 0.99
-//        {
-//            progressView.displayLink?.paused = true
-//        }
-//        else
-//        {
-//            progressView.progress = progressView.progress + 0.1
-//        }
     }
+
     /*
     // MARK: - Navigation
 
