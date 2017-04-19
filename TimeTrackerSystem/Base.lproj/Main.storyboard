@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F2407" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F2410" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
@@ -46,14 +46,86 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyb-39-0fE" customClass="CircleProgressView" customModule="Time_Tracker" customModuleProvider="target">
                                 <rect key="frame" x="60" y="148" width="200" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1p6-HK-eQH">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="1ai-aI-kbM"/>
+                                            <constraint firstAttribute="width" constant="200" id="9yw-T2-T00"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startTimer:" destination="YYn-5A-SaH" eventType="touchUpInside" id="qeG-8g-9Se"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yi-CG-WO7">
+                                        <rect key="frame" x="28" y="62" width="145" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="HkU-qs-qWF"/>
+                                            <constraint firstAttribute="height" constant="21" id="Y5K-6g-oVk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adP-zL-Uut">
+                                        <rect key="frame" x="28" y="81" width="145" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="ewU-Rm-3k2"/>
+                                            <constraint firstAttribute="height" constant="21" id="mAJ-Fd-Lla"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVa-uM-YLc">
+                                        <rect key="frame" x="28" y="100" width="145" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="MRc-xQ-GQE"/>
+                                            <constraint firstAttribute="width" constant="145" id="tHK-JY-uDf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYN-eq-5YC">
+                                        <rect key="frame" x="28" y="121" width="145" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="CHG-R9-vH0"/>
+                                            <constraint firstAttribute="height" constant="21" id="eGK-Rm-8Ou"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TYN-eq-5YC" secondAttribute="trailing" constant="27" id="05z-qf-Lg5"/>
+                                    <constraint firstItem="adP-zL-Uut" firstAttribute="leading" secondItem="jyb-39-0fE" secondAttribute="leading" constant="28" id="4dM-mM-6Le"/>
                                     <constraint firstAttribute="height" constant="200" id="6FR-mI-UYW"/>
+                                    <constraint firstItem="8yi-CG-WO7" firstAttribute="leading" secondItem="jyb-39-0fE" secondAttribute="leading" constant="28" id="BaJ-18-cPG"/>
+                                    <constraint firstAttribute="bottom" secondItem="TYN-eq-5YC" secondAttribute="bottom" constant="58" id="C9B-zn-dU0"/>
+                                    <constraint firstItem="TYN-eq-5YC" firstAttribute="top" secondItem="adP-zL-Uut" secondAttribute="bottom" constant="19" id="Jl4-pm-yIX"/>
                                     <constraint firstAttribute="width" constant="200" id="KZ5-Ir-buI"/>
+                                    <constraint firstAttribute="trailing" secondItem="adP-zL-Uut" secondAttribute="trailing" constant="27" id="LNC-nW-q3T"/>
+                                    <constraint firstItem="TYN-eq-5YC" firstAttribute="leading" secondItem="jyb-39-0fE" secondAttribute="leading" constant="28" id="arj-lQ-r0W"/>
+                                    <constraint firstItem="8yi-CG-WO7" firstAttribute="top" secondItem="jyb-39-0fE" secondAttribute="top" constant="62" id="b9g-q9-LYl"/>
+                                    <constraint firstAttribute="trailing" secondItem="mVa-uM-YLc" secondAttribute="trailing" constant="27" id="beo-FH-cfm"/>
+                                    <constraint firstItem="mVa-uM-YLc" firstAttribute="leading" secondItem="jyb-39-0fE" secondAttribute="leading" constant="28" id="cAI-t9-Scn"/>
+                                    <constraint firstAttribute="bottom" secondItem="1p6-HK-eQH" secondAttribute="bottom" id="d3E-ym-EkZ"/>
+                                    <constraint firstItem="1p6-HK-eQH" firstAttribute="leading" secondItem="jyb-39-0fE" secondAttribute="leading" id="h69-OE-8XL"/>
+                                    <constraint firstAttribute="trailing" secondItem="1p6-HK-eQH" secondAttribute="trailing" id="hBu-aI-875"/>
+                                    <constraint firstItem="TYN-eq-5YC" firstAttribute="top" secondItem="mVa-uM-YLc" secondAttribute="bottom" id="oaR-WT-oJb"/>
+                                    <constraint firstAttribute="trailing" secondItem="8yi-CG-WO7" secondAttribute="trailing" constant="27" id="pRW-SN-1HW"/>
+                                    <constraint firstItem="mVa-uM-YLc" firstAttribute="top" secondItem="8yi-CG-WO7" secondAttribute="bottom" constant="17" id="u0i-ZK-m8j"/>
+                                    <constraint firstItem="1p6-HK-eQH" firstAttribute="top" secondItem="jyb-39-0fE" secondAttribute="top" id="wrB-Re-eYt"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="refreshRate">
                                         <real key="value" value="1000"/>
@@ -62,7 +134,7 @@
                                         <color key="value" red="0.1058823529" green="0.82352941180000006" blue="0.42745098040000001" alpha="0.5" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="trackFillColor">
                                         <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -86,6 +158,11 @@
                         <barButtonItem key="leftBarButtonItem" image="menu" id="Qgh-0x-n3e"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnTimer" destination="1p6-HK-eQH" id="akb-Vf-bOm"/>
+                        <outlet property="lblElapseTime" destination="mVa-uM-YLc" id="vwi-Al-2ST"/>
+                        <outlet property="lblInOutText" destination="TYN-eq-5YC" id="LdZ-K1-3fl"/>
+                        <outlet property="lblRemainingText" destination="adP-zL-Uut" id="wz1-XL-g1H"/>
+                        <outlet property="lblRemainingTime" destination="8yi-CG-WO7" id="HLU-TK-Aih"/>
                         <outlet property="sidebarButton" destination="Qgh-0x-n3e" id="fBh-hb-6lz"/>
                         <outlet property="timerView" destination="jyb-39-0fE" id="zgj-hF-fmz"/>
                     </connections>
@@ -347,7 +424,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Work Time" translatesAutoresizingMaskIntoConstraints="NO" id="zi4-1j-OqV">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Total Working Hours" translatesAutoresizingMaskIntoConstraints="NO" id="zi4-1j-OqV">
                                             <rect key="frame" x="18" y="6" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="DDU-Hp-yrt"/>
@@ -360,7 +437,7 @@
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="247" id="ceM-EE-GlQ"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3qF-UY-vEe">
@@ -397,7 +474,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Prior Late Time" translatesAutoresizingMaskIntoConstraints="NO" id="6th-qZ-UHK">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Remind Prior Late Time" translatesAutoresizingMaskIntoConstraints="NO" id="6th-qZ-UHK">
                                             <rect key="frame" x="18" y="6" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="aeC-H7-WG6"/>
@@ -416,7 +493,7 @@
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="195" id="Ge0-kt-sEr"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -494,8 +571,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Prior Late Time" width="128" height="128"/>
-        <image name="Work Time" width="128" height="128"/>
+        <image name="Remind Prior Late Time" width="128" height="128"/>
+        <image name="Total Working Hours" width="128" height="128"/>
         <image name="comments" width="1024" height="1024"/>
         <image name="map" width="1024" height="1024"/>
         <image name="menu" width="28" height="20"/>
@@ -503,6 +580,6 @@
         <image name="setting" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Qc6-8T-Vfm"/>
+        <segue reference="8If-yJ-Mdo"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CircleProgressViewDelegate: class {
+    func onUpdateUI()
+}
+
 @objc @IBDesignable class CircleProgressView: UIView {
 
     struct Constants {
@@ -18,7 +22,8 @@ import UIKit
         let twoSeventyDegrees = 270.0
         var contentView:UIView = UIView()
     }
-
+    
+    weak var delegate:CircleProgressViewDelegate!
      let constants = Constants()
      var internalProgress:Double = 0.0
 
@@ -184,6 +189,12 @@ import UIKit
 
     /*internal*/ func displayLinkTick() {
 
+        
+        if let inDelegate = delegate
+        {
+            inDelegate.onUpdateUI()
+        }
+        
         let renderTime = refreshRate.isZero ? self.displayLink!.duration : refreshRate
         //print(" == \(progress)")
         if destinationProgress > progress {

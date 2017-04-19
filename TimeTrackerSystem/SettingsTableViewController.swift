@@ -22,53 +22,6 @@ class NotificationSettingsCell:UITableViewCell
     @IBOutlet var switchNotifSettings: UISwitch!
 }
 
-class GenSettings: NSObject, NSCoding {
-    var key:String!
-    var value:String!
-    
-    init(key: String, value: String) {
-        self.key = key
-        self.value = value
-    }
-    
-// MARK: NSCoding
-    required convenience init?(coder aDecoder: NSCoder) {
-        guard let key = aDecoder.decodeObjectForKey("key"),
-        let value = aDecoder.decodeObjectForKey("value")
-            else { return nil }
-        
-        self.init(key: key as! String, value: value as! String)
-    }
-    
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(self.key, forKey: "key")
-        aCoder.encodeObject(self.value, forKey: "value")
-    }
-}
-
-class NotifSettings: NSObject, NSCoding {
-    let key:String!
-    var value:Bool!
-    
-    init(key: String, value: Bool) {
-        self.key = key
-        self.value = value
-    }
-    
-    // MARK: NSCoding
-    required convenience init?(coder aDecoder: NSCoder) {
-        guard let key = aDecoder.decodeObjectForKey("key"),
-            let value = aDecoder.decodeObjectForKey("value")
-            else { return nil }
-        
-        self.init(key: key as! String, value: value as! Bool)
-    }
-    
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(self.key, forKey: "key")
-        aCoder.encodeObject(self.value, forKey: "value")
-    }
-}
 
 class SettingsTableViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
@@ -76,8 +29,8 @@ class SettingsTableViewController: UITableViewController, UIPickerViewDelegate, 
     @IBOutlet var pickerView: UIPickerView!
     @IBOutlet var datePickerView: UIDatePicker!
     
-    let generalSettingsKey = "GeneralSettings"
-    let notificationSettingsKey = "NotificationSettings"
+//    let generalSettingsKey = "GeneralSettings"
+//    let notificationSettingsKey = "NotificationSettings"
     var generalSettings:[GenSettings]!
     var notificationSettings:[NotifSettings]!
     
@@ -91,7 +44,7 @@ class SettingsTableViewController: UITableViewController, UIPickerViewDelegate, 
     
     func initData() {
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        if let obj = userDefaults.objectForKey(generalSettingsKey)
+        if let obj = userDefaults.objectForKey(AppDefaults.sharedInstance.generalSettingsKey)
         {
             if let objArray = NSKeyedUnarchiver.unarchiveObjectWithData(obj as! NSData)
             {
@@ -100,10 +53,10 @@ class SettingsTableViewController: UITableViewController, UIPickerViewDelegate, 
         }
         else
         {
-            generalSettings = [GenSettings(key:"Total Working Hours", value:"9 Hours 0 Mins"), GenSettings(key:"Out Of Office Time", value:"1 Hour 0 Min"), GenSettings(key:"Week Days", value:"Mon, Tue, Wed, Thu, Sun"), GenSettings(key:"Max Late Time", value:"10:30"), GenSettings(key:"Remind Prior Late Time", value:"15 Mins"), GenSettings(key:"Remind Prior Outtime End", value:"5 Mins"), GenSettings(key:"Remind Prior Working Hours Completed", value:"10 Mins"), GenSettings(key:"Max Outtime Limit", value:"19:30")]
+            generalSettings = AppDefaults.sharedInstance.generalSettings() //[GenSettings(key:"Total Working Hours", value:"9 Hours 0 Mins"), GenSettings(key:"Out Of Office Time", value:"1 Hour 0 Min"), GenSettings(key:"Week Days", value:"Mon, Tue, Wed, Thu, Sun"), GenSettings(key:"Max Late Time", value:"10:30"), GenSettings(key:"Remind Prior Late Time", value:"15 Mins"), GenSettings(key:"Remind Prior Outtime End", value:"5 Mins"), GenSettings(key:"Remind Prior Working Hours Completed", value:"10 Mins"), GenSettings(key:"Max Outtime Limit", value:"19:30")]
         }
         
-        if let obj = userDefaults.objectForKey(notificationSettingsKey)
+        if let obj = userDefaults.objectForKey(AppDefaults.sharedInstance.notificationSettingsKey)
         {
             if let objArray = NSKeyedUnarchiver.unarchiveObjectWithData(obj as! NSData)
             {
@@ -112,7 +65,7 @@ class SettingsTableViewController: UITableViewController, UIPickerViewDelegate, 
         }
         else
         {
-            notificationSettings = [NotifSettings(key:"Remind Prior Late Time", value:true), NotifSettings(key:"Remind Prior Outtime End", value:true), NotifSettings(key:"Remind Prior Work Hours Completed", value:true), NotifSettings(key:"Working Hour Completed Notification", value:true), NotifSettings(key:"On Leave", value:false)]
+            notificationSettings = AppDefaults.sharedInstance.notificationSettings() //[NotifSettings(key:"Remind Prior Late Time", value:true), NotifSettings(key:"Remind Prior Outtime End", value:true), NotifSettings(key:"Remind Prior Work Hours Completed", value:true), NotifSettings(key:"Working Hour Completed Notification", value:true), NotifSettings(key:"On Leave", value:false)]
         }
     }
     
@@ -247,7 +200,7 @@ class SettingsTableViewController: UITableViewController, UIPickerViewDelegate, 
         {
             notificationSettings[sender.tag].value = isEnable
             let userDefaults = NSUserDefaults.standardUserDefaults()
-            userDefaults.setObject(NSKeyedArchiver.archivedDataWithRootObject(notificationSettings), forKey: notificationSettingsKey)
+            userDefaults.setObject(NSKeyedArchiver.archivedDataWithRootObject(notificationSettings), forKey: AppDefaults.sharedInstance.notificationSettingsKey)
             userDefaults.synchronize()
         }
     }

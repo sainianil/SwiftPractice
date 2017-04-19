@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0423EB051EA63F2000BB6F6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423EB041EA63F2000BB6F6F /* Constants.swift */; };
 		0434923B1E8BA84F0054D8FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434923A1E8BA84F0054D8FE /* MapViewController.swift */; };
 		043611F51EA38DE000AD7E1A /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043611F41EA38DE000AD7E1A /* CircleProgressView.swift */; };
 		0438B0201E9A032D004F2E9C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438B01F1E9A032D004F2E9C /* MapKit.framework */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0423EB041EA63F2000BB6F6F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0434923A1E8BA84F0054D8FE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		043611F41EA38DE000AD7E1A /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		0438B01F1E9A032D004F2E9C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -127,6 +129,7 @@
 				0467328A1E967ACA00DEFBEA /* ReportViewController.swift */,
 				0467328C1E967B5700DEFBEA /* SettingsTableViewController.swift */,
 				043611F41EA38DE000AD7E1A /* CircleProgressView.swift */,
+				0423EB041EA63F2000BB6F6F /* Constants.swift */,
 			);
 			path = TimeTrackerSystem;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				043D8A841E7967FD0063553B /* MainViewController.swift in Sources */,
 				043D8A861E7968E10063553B /* SidebarTableViewController.swift in Sources */,
 				0467328B1E967ACA00DEFBEA /* ReportViewController.swift in Sources */,
+				0423EB051EA63F2000BB6F6F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TimeTrackerSystem/SettingsTableViewController.swift"
-            timestampString = "514033894.334577"
+            timestampString = "514212381.898462"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "pickTime(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -22,16 +22,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TimeTrackerSystem/CircleProgressView.swift"
-            timestampString = "514046787.693611"
+            filePath = "TimeTrackerSystem/MainViewController.swift"
+            timestampString = "514301792.958201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
-            landmarkName = "displayLinkTick()"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "timeStringToDisplay(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
